@@ -1,0 +1,40 @@
+﻿<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>سوقنا</title>
+</head>
+
+<body style="transition: background 1.5s;">
+
+<div align="center">
+	<img src="img.png" width="40%" height="300px"><br>
+	<b><p style="color:#FFFFFF;font-family:roboto;padding:20px;font-size:30px;">
+		تطبيق سوقنا الالكتروني تطبيق لعرض المنتجات والاجهزة الالكترونية في ولاية النيل الابيض 
+	</p></b>
+	<a href="#" style="
+    font-size: 40px;
+    font-family: roboto;
+    border: 5px solid #FFFFFF;
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;"><b> تنزيل التطبيق </b></a>
+<h4> تطبيق سوقنا @ 2024م</h4>
+</div>
+
+<script>
+	const randomColor = () => '#' + Math.random().toString(16).substr(-6)
+	const changeColor = () => document.body.style.backgroundColor = randomColor()
+
+	setInterval(() => {
+	  changeColor()
+	}, 1500)
+
+	// start color animation as soon as document is ready
+	document.onreadystatechange = () => {
+	  if (document.readyState === 'complete') {
+		changeColor()
+	  }
+	}
+</script>
+</body>
+</html>
